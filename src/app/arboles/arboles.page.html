@@ -1,0 +1,81 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>arboles</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    
+        <ion-card class="welcome-card">
+          <ion-img src="/assets/img/arbolSolitario.jpg"></ion-img>
+          <!-- <ion-card-header>
+            <ion-card-subtitle>SISTEMA DE INVENTARIO PARQUES</ion-card-subtitle>
+            <ion-card-title>BIENVENIDO!</ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            <p>Esta es una App que le ayudará a inventariar Mobiliario y Arboles de los Parques publicos</p>
+          </ion-card-content> -->
+        </ion-card>
+
+        <ion-item>
+            <ion-label>Estado</ion-label>
+            <ion-select placeholder="Select One">
+              <ion-select-option value="f">Bueno</ion-select-option>
+              <ion-select-option value="m">Malo</ion-select-option>
+            </ion-select>
+          </ion-item>
+      
+          <ion-list>
+           <ion-item>
+              <ion-label>ID_distrito</ion-label>
+              <ion-toggle [(ngModel)]="identifica"></ion-toggle>
+            </ion-item>
+          
+            <ion-item>
+              <ion-label>Especie</ion-label>
+              <ion-toggle [(ngModel)]="especie"></ion-toggle>
+            </ion-item> 
+          
+            <ion-item>
+              <ion-label>Edad</ion-label>
+              <ion-toggle [(ngModel)]="edad"></ion-toggle>
+            </ion-item>
+          </ion-list>
+
+          <ion-radio-group>
+            <ion-list-header>
+              RADIO BUTTONS
+            </ion-list-header>
+        
+            <ion-item>
+              <ion-label>El Arbol esta en buen estado</ion-label>
+              <ion-radio value="cord"></ion-radio>
+            </ion-item>
+        
+            <ion-item>
+              <ion-label>El Arbol necesita Tratamiento</ion-label>
+              <ion-radio value="duesenberg"></ion-radio>
+            </ion-item>
+        
+            <ion-item>
+              <ion-label>Es necesario Talar y Reemplazar el Arbol</ion-label>
+              <ion-radio value="hudson"></ion-radio>
+            </ion-item>
+        
+            <ion-item>
+              <ion-label>Packard</ion-label>
+              <ion-radio value="packard"></ion-radio>
+            </ion-item>
+        
+            <ion-item>
+              <ion-label>Studebaker</ion-label>
+              <ion-radio value="studebaker"></ion-radio>
+            </ion-item>
+          </ion-radio-group>
+          <ion-footer>
+            <ion-button color="primary" routerLink="/home">
+              Vuelve a Home
+            </ion-button>
+          </ion-footer>
+    
+</ion-content>
