@@ -16,7 +16,7 @@
         Selecciona el parque al cual vas a realizar el inventario de acuerdo a tu ubicación
        </ion-label>
      </ion-item>
-     <ion-card *ngFor="let item of parques">
+     <ion-card *ngFor="let item of parques" (click)="selectionPark()">
         <ion-item >
             <ion-avatar slot="start">
                 <ion-img src="../assets/img/{{item.foto}}"></ion-img>
@@ -53,7 +53,7 @@
 
    <ion-footer>
     
-      <ion-button color="primary" routerLink="/agregarinventario">Agregar Inventario</ion-button>
+      <!-- <ion-button color="primary" routerLink="/agregarinventario">Agregar Inventario</ion-button> -->
   
   </ion-footer>
 

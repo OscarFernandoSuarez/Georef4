@@ -48,6 +48,9 @@ export class HomePage {
   {}
 
 
+  selectionPark(){
+    this.navController.navigateForward('agregarinventario');
+  }
   
 
 }
